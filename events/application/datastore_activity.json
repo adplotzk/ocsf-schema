@@ -49,6 +49,35 @@
             "group": "primary",
             "requirement": "optional"
         },
+    "type": {
+      "caption": "Type",
+      "description": "The datastore resource type (e.g. database, datastore, or table).",
+      "requirement": "optional"
+    },
+    "type_id": {
+      "caption": "Type ID",
+      "description": "The normalized datastore resource type identifier.",
+      "enum": {
+        "99": {
+          "caption": "Other",
+          "description": "The datastore resource type is not mapped."
+        },
+        "0": {
+          "caption": "Unknown",
+          "description": "The datastore resource type is unknown."
+        },
+        "1": {
+          "caption": "Database"
+        },
+        "2": {
+          "caption": "Databucket"
+        },
+        "3": {
+          "caption": "Table"
+        }
+      },
+      "requirement": "recommended"
+    },
         "query_info": {
             "group": "primary",
             "requirement": "optional"
